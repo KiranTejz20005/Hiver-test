@@ -15,6 +15,36 @@ SAMPLE_CASES = [
 
 import re
 
+DEFAULT_INTENT_RESOLUTIONS = {
+    "safety_or_driver_conduct": "Escalate immediately to Uber safety incident specialist for urgent investigation.",
+    "payment_problem": "Review trip fare breakdown and payment method; route for billing adjustment.",
+    "refund_request": "Examine trip cancellation timing and fare policy to process eligible refund.",
+    "lost_item": "Guide rider through the lost-item reporting workflow in the Uber app.",
+    "account_or_login": "Assist rider with identity verification and account credential recovery.",
+    "promo_or_coupon": "Verify promotion terms and trip eligibility; apply fare credit if applicable.",
+    "trip_or_pickup": "Troubleshoot booking/pickup issue and check driver status in the app.",
+    "other_or_unclear": "Connect with rider through in-app support to investigate and resolve inquiry.",
+}
+
+
+def extract_support_resolution(conversation: str, intent: str = "other_or_unclear") -> str:
+    """Extract substantive support actions/replies from conversation turns, with intent-grounded fallback."""
+    support_lines = []
+    seen = set()
+    for line in str(conversation).split("\n"):
+        line_clean = line.strip()
+        if line_clean.startswith("Support:"):
+            text = line_clean[len("Support:"):].strip()
+            if text and text not in seen:
+                seen.add(text)
+                support_lines.append(text)
+    if support_lines:
+        res = " ".join(support_lines).strip()
+        if len(res) >= 10 and re.search(r"[a-zA-Z]{3,}", res):
+            return res
+    return DEFAULT_INTENT_RESOLUTIONS.get(intent, DEFAULT_INTENT_RESOLUTIONS["other_or_unclear"])
+
+
 def _clean_title(conversation: str) -> str:
     lines = str(conversation).split("\n")
     for line in lines:
@@ -34,6 +64,13 @@ def load_cases() -> pd.DataFrame:
             frame = pd.read_parquet(p)
             required_cols = ["conversation_id", "title", "customer", "resolution", "intent"]
             if all(c in frame.columns for c in required_cols):
+                # Ensure resolution is never empty, null, or whitespace
+                mask_empty = frame["resolution"].isna() | frame["resolution"].astype(str).str.strip().eq("")
+                if mask_empty.any():
+                    frame.loc[mask_empty, "resolution"] = [
+                        extract_support_resolution(c, i)
+                        for c, i in zip(frame.loc[mask_empty, "customer"], frame.loc[mask_empty, "intent"])
+                    ]
                 return frame[required_cols].dropna().reset_index(drop=True)
 
     candidates = [
@@ -49,16 +86,22 @@ def load_cases() -> pd.DataFrame:
                 frame = frame[frame["company"].eq("Uber_Support")].copy()
             frame["title"] = frame["conversation"].map(_clean_title)
             frame["customer"] = frame["conversation"].astype(str)
-            frame["resolution"] = frame["summary"].fillna("Historical Uber support conversation")
             frame["intent"] = frame["customer"].map(infer_intent)
+            frame["resolution"] = [
+                extract_support_resolution(c, i)
+                for c, i in zip(frame["customer"], frame["intent"])
+            ]
             return frame[["conversation_id", "title", "customer", "resolution", "intent"]].dropna().reset_index(drop=True)
         if path.suffix == ".csv" and path.exists():
             frame = pd.read_csv(path)
             if "text" in frame.columns:
                 frame = frame.rename(columns={"text": "customer"})
                 frame["title"] = frame["customer"].astype(str).str.slice(0, 48)
-                frame["resolution"] = "Historical Uber support conversation"
-                frame["intent"] = "other_or_unclear"
+                frame["intent"] = frame["customer"].map(infer_intent)
+                frame["resolution"] = [
+                    extract_support_resolution(c, i)
+                    for c, i in zip(frame["customer"], frame["intent"])
+                ]
                 return frame[["title", "customer", "resolution", "intent"]].dropna().head(5000)
     return pd.DataFrame(SAMPLE_CASES)
 

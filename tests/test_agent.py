@@ -7,6 +7,7 @@ def test_agent_returns_complete_structured_result():
     assert {"intent", "confidence", "decision", "reason", "reply", "evidence", "risk_flags"}.issubset(result)
     assert result["decision"] in {"auto-handle", "escalate"}
     assert len(result["evidence"]) == 3
+    assert all(bool(str(item.get("resolution", "")).strip()) for item in result["evidence"])
 
 
 def test_safety_case_escalates():

@@ -8,6 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from src.providers import LLMProvider
 from src.safety import detect_prompt_injection, validate_reply
+from src.data import extract_support_resolution
 
 
 INTENT_PATTERNS = {
@@ -142,6 +143,9 @@ class UberSupportAgent:
         scores = cosine_similarity(query, self.matrix)[0]
         indices = scores.argsort()[-3:][::-1]
         evidence = self.cases.iloc[indices].copy().to_dict("records")
+        for item in evidence:
+            if not item.get("resolution") or not str(item.get("resolution")).strip():
+                item["resolution"] = extract_support_resolution(item.get("customer", ""), item.get("intent", "other_or_unclear"))
         top_similarity = float(scores[indices[0]]) if len(indices) else 0.0
         retrieved_intents = [case.get("intent", "") for case in evidence if case.get("intent")]
 

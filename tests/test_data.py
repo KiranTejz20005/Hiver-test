@@ -5,6 +5,7 @@ def test_real_uber_cases_are_available():
     cases = load_cases()
     assert len(cases) >= 1000
     assert {"customer", "resolution", "intent"}.issubset(cases.columns)
+    assert (cases["resolution"].str.strip() != "").all()
 
 
 def test_intent_rules_cover_core_uber_support_cases():

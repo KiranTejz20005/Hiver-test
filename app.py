@@ -1,14 +1,50 @@
-import re
-import os
-import json
+import sys
 from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+import json
+import os
+import re
 
 import pandas as pd
 import streamlit as st
 from dotenv import load_dotenv
 
 from src.agent import UberSupportAgent
-from src.data import load_cases
+
+try:
+    from src.data import extract_support_resolution, load_cases
+except ImportError:
+    from src.data import load_cases
+    DEFAULT_INTENT_RESOLUTIONS = {
+        "safety_or_driver_conduct": "Escalate immediately to Uber safety incident specialist for urgent investigation.",
+        "payment_problem": "Review trip fare breakdown and payment method; route for billing adjustment.",
+        "refund_request": "Examine trip cancellation timing and fare policy to process eligible refund.",
+        "lost_item": "Guide rider through the lost-item reporting workflow in the Uber app.",
+        "account_or_login": "Assist rider with identity verification and account credential recovery.",
+        "promo_or_coupon": "Verify promotion terms and trip eligibility; apply fare credit if applicable.",
+        "trip_or_pickup": "Troubleshoot booking/pickup issue and check driver status in the app.",
+        "other_or_unclear": "Connect with rider through in-app support to investigate and resolve inquiry.",
+    }
+
+    def extract_support_resolution(conversation: str, intent: str = "other_or_unclear") -> str:
+        support_lines = []
+        seen = set()
+        for line in str(conversation).split("\n"):
+            line_clean = line.strip()
+            if line_clean.startswith("Support:"):
+                text = line_clean[len("Support:"):].strip()
+                if text and text not in seen:
+                    seen.add(text)
+                    support_lines.append(text)
+        if support_lines:
+            res = " ".join(support_lines).strip()
+            if len(res) >= 10 and re.search(r"[a-zA-Z]{3,}", res):
+                return res
+        return DEFAULT_INTENT_RESOLUTIONS.get(intent, DEFAULT_INTENT_RESOLUTIONS["other_or_unclear"])
 
 load_dotenv()
 
@@ -88,8 +124,16 @@ st.title("Uber Support Copilot")
 st.caption("Evidence-grounded response drafting with explicit escalation decisions")
 
 @st.cache_data(show_spinner="Loading Uber conversations...")
-def get_cases():
-    return load_cases()
+def get_cases(version: str = "v2_with_resolutions"):
+    df = load_cases()
+    if "resolution" in df.columns:
+        mask_empty = df["resolution"].isna() | df["resolution"].astype(str).str.strip().eq("")
+        if mask_empty.any():
+            df.loc[mask_empty, "resolution"] = [
+                extract_support_resolution(c, i)
+                for c, i in zip(df.loc[mask_empty, "customer"], df.loc[mask_empty, "intent"])
+            ]
+    return df
 
 
 @st.cache_resource(show_spinner="Building retrieval index...")
@@ -97,7 +141,7 @@ def get_agent(cases):
     return UberSupportAgent(cases)
 
 
-cases = get_cases()
+cases = get_cases(version="v2_with_resolutions")
 agent = get_agent(cases)
 
 # Clean, descriptive examples for interactive testing
@@ -157,7 +201,24 @@ with tab_case:
         st.text_area("Draft", value=result["reply"], height=130, label_visibility="collapsed")
         st.subheader("Historical evidence")
         evidence = pd.DataFrame(result["evidence"])
-        st.dataframe(evidence[["title", "customer", "resolution"]], width="stretch", hide_index=True)
+        if "resolution" in evidence.columns:
+            evidence["resolution"] = evidence["resolution"].fillna("").astype(str)
+            empty_mask = evidence["resolution"].str.strip().eq("")
+            if empty_mask.any():
+                evidence.loc[empty_mask, "resolution"] = [
+                    extract_support_resolution(c, i)
+                    for c, i in zip(evidence.loc[empty_mask, "customer"], evidence.loc[empty_mask, "intent"])
+                ]
+        st.dataframe(
+            evidence[["title", "customer", "resolution"]],
+            use_container_width=True,
+            hide_index=True,
+            column_config={
+                "title": st.column_config.TextColumn("Title", width="medium"),
+                "customer": st.column_config.TextColumn("Customer conversation", width="large"),
+                "resolution": st.column_config.TextColumn("Historical resolution", width="large"),
+            },
+        )
 
 with tab_eval:
     st.subheader("Evaluation foundation")
@@ -204,10 +265,11 @@ with tab_review:
             source = review[column] if column in review.columns else pd.Series(0, index=review.index)
             review[column] = pd.to_numeric(source, errors="coerce").fillna(0).astype(int)
         st.caption("Review a representative queue, correct the inferred intent or decision, and save the reviewed labels for the final report.")
-        review_columns = ["conversation_id", "customer", "expected_intent", "expected_decision", "human_groundedness", "human_correctness", "human_completeness", "human_tone", "human_safety", "human_notes"]
+        review_columns = ["conversation_id", "customer", "resolution", "expected_intent", "expected_decision", "human_groundedness", "human_correctness", "human_completeness", "human_tone", "human_safety", "human_notes"]
         edited = st.data_editor(review[review_columns], width="stretch", hide_index=True, num_rows="fixed", column_config={
             "conversation_id": st.column_config.TextColumn("Conversation", disabled=True),
             "customer": st.column_config.TextColumn("Conversation text", disabled=True, width="large"),
+            "resolution": st.column_config.TextColumn("Resolution", disabled=True, width="large"),
             "expected_intent": st.column_config.SelectboxColumn("Intent", options=sorted(cases["intent"].unique().tolist())),
             "expected_decision": st.column_config.SelectboxColumn("Decision", options=["auto-handle", "escalate"]),
             "human_groundedness": st.column_config.NumberColumn("Groundedness", min_value=1, max_value=5, step=1),
@@ -222,7 +284,7 @@ with tab_review:
             full = full.astype(object)
             full = full.set_index("conversation_id")
             edited_clean = edited.set_index("conversation_id").astype(object)
-            for column in review_columns[2:]:
+            for column in review_columns[3:]:
                 if column not in full.columns:
                     full[column] = ""
                 full.loc[edited_clean.index, column] = edited_clean[column].astype(str)
