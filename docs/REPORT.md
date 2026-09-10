@@ -107,3 +107,16 @@ Any single headline metric (e.g. *"72.5% accuracy"* or *"92% confidence on payme
 3. **Live Mock API Backend Integration:** Connect the agent to a mock Uber trip database (`GET /trips/{id}/status`, `GET /fare/breakdown`) so the agent can deterministically verify refund eligibility before escalating.
 4. **Active Learning Queue for Reviewers:** Automatically surface tickets with narrow classification margins (margin < 0.15) into the Streamlit review tab to continually expand the golden corpus.
 
+---
+
+## 6. Citations & Acknowledgments
+
+In accordance with the assignment guidelines (*"Cite anything you borrowed"*):
+1. **Primary Dataset:** Kaggle Customer Support on Twitter (`thoughtvector/customer-support-on-twitter`), public domain / CC0. Filtered to 41,185 `@Uber_Support` multi-turn conversation threads.
+2. **Intent Taxonomy Reference:** Inspired by PolyAI Banking77 (Casanueva et al., 2020) for fine-grained customer query categorizations, tailored to ride-hailing operational taxonomies.
+3. **Calibration Formulation:** Expected Calibration Error (ECE) and reliability diagrams formulated following Guo et al. (*"On Calibration of Modern Neural Networks"*, ICML 2017).
+4. **LLM-as-a-Judge Methodology:** Multi-criteria evaluation rubric adapted from Zheng et al. (*"Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena"*, NeurIPS 2023).
+5. **Open Source Libraries:** `scikit-learn` (Pedregosa et al.), `pandas` (McKinney), `streamlit`, `plotly`, and `pytest`.
+6. **Inference Providers:** Meta LLaMA 3 model family (`meta/llama-3.1-8b-instruct` and `llama-3.3-70b-versatile`) accessed via Groq / NVIDIA NIM APIs with local deterministic fallbacks.
+
+

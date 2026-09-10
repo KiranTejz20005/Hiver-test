@@ -189,6 +189,17 @@ Support leadership must understand the nuances behind headline scores before dep
 * **ML & Information Retrieval:** `scikit-learn` (TF-IDF Vectorizer, Cosine Similarity, Logistic Regression), `pandas`, `numpy`
 * **Interactive UI:** `streamlit` (Multi-tab support copilot, real-time analytics, data editor)
 * **LLM Integration:** OpenAI-compatible API adapter supporting **Groq** (`llama-3.3-70b-versatile`) and **NVIDIA NIM** (`llama-3.1-8b-instruct`) with deterministic offline fallback
-* **Testing:** `pytest` (10 unit tests covering agents, data ingestion, evaluation, safety invariants, and deliverables integrity)
+* **Testing:** `pytest` (11 unit tests covering agents, data ingestion, evaluation, safety invariants, and deliverables integrity)
+
+---
+
+## 📚 Citations & Acknowledgments
+
+* **Primary Dataset:** Kaggle Customer Support on Twitter (`thoughtvector/customer-support-on-twitter`), CC0 public domain. Reconstructed into 41,185 multi-turn `@Uber_Support` conversation threads.
+* **Intent Taxonomy Inspiration:** PolyAI Banking77 (Casanueva et al., 2020) for intent boundary structuring.
+* **Calibration Methodology:** Expected Calibration Error (ECE) and reliability diagrams following Guo et al. (*"On Calibration of Modern Neural Networks"*, ICML 2017).
+* **Evaluation Framework:** Multi-criteria rubric formulation following Zheng et al. (*"Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena"*, NeurIPS 2023).
+* **Core Libraries:** `scikit-learn`, `pandas`, `numpy`, `streamlit`, `plotly`, `python-dotenv`, and `pytest`.
+
 
 
