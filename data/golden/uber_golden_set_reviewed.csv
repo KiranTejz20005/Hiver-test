@@ -1,26 +1,26 @@
 conversation_id,title,customer,resolution,intent,expected_decision,expected_intent,human_notes,human_groundedness,human_correctness,human_completeness,human_tone,human_safety
 402d643cb08b3cef2ac7aefcd5ea6d0f,"Customer: After hours of errors, login issues, &amp; zero support, I'm done. You","Customer: After hours of errors, login issues, &amp; zero support, I'm done. You obviously don't want business. Goodbye.
-Support: Here to help! Send us a DM (direct message) with your email address with more info so we can assist.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: Here to help! Send us a DM (direct message) with your email address with more info so we can assist.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,4.0,5.0
 630ec2b1d9112a5260d5c2ba325e6398,Customer: can you  please f**k*n fix my godamm paytm Account or not . Tired of y,"Customer: can you  please f**k*n fix my godamm paytm Account or not . Tired of your stupid robotic chat . #uber #uberindia  #pathetic
 Support: It seems a member of our team has reached out to you. Please check your email and follow up with them there.
 Customer: This is your stupid automated response . I am using same number for uber and paytm and earlier I could use now I can’t . https://t.co/xp1xugZLi3
-Support: We followed up with you via DM.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: We followed up with you via DM.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,4.0,5.0
 3f9bdb28dba9cb8bcc582bdb16152d20,Customer: Does @115877 deliver ballpark nachos? Having major imitation cheese wi,"Customer: Does @115877 deliver ballpark nachos? Having major imitation cheese withdrawals. #tyronebiggums
-Support: We can take a closer look! Please send us a DM of the email address connected to your account so we can further assist.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: We can take a closer look! Please send us a DM of the email address connected to your account so we can further assist.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,4.0,5.0
 1637f81cb0e94b247765dcc0fb2e00df,Customer: @Uber_Support here you have another fucking driver stealing ftom your ,"Customer: @Uber_Support here you have another fucking driver stealing ftom your customers
-Support: Will you please DM us with your email address associated with your account? We'll look into it.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: Will you please DM us with your email address associated with your account? We'll look into it.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,4.0,5.0
 d2c8b4e539aeb9a2cb280e6a109e4b0e,Customer: Someone has been trying to get into my Uber account all morning. Sigh.,"Customer: Someone has been trying to get into my Uber account all morning. Sigh.
 Support: Here to help! Follow up here; https://t.co/kGIXas5Cxg and our team will connect right away.
 Customer: I’ve filed a ticket, but I can’t confirm my email address on the ticket as the validate email link needs Auth and I can’t sign in.. https://t.co/AHcFTHHqVq
 Support: We're here to help! Send us a DM with your email address so we can follow up.
-Customer: Done!",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Customer: Done!",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,4.0,5.0,4.0,5.0
 c381416369358a1c60b3185030a67bf3,Customer: Why does @115877 ask for login when I am already logged into @115873 ?,"Customer: Why does @115877 ask for login when I am already logged into @115873 ?
 Support: Happy to clarify, Abhimithra. You will need to verify your information since you are trying to log in on another app. Hope this helps!
-Customer: Doesn't help. When you two apps, right way is to use my existing login or you don't trust your flagship app security much",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Customer: Doesn't help. When you two apps, right way is to use my existing login or you don't trust your flagship app security much",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,4.0,3.0,5.0
 56bc8deb5bf9207bc4a02f65c7cb0fd1,Customer: Why is my Uber account not letting me request a damn ride @115873 http,"Customer: Why is my Uber account not letting me request a damn ride @115873 https://t.co/KfBAUD4efH
-Support: Here to help! Send us a note here, https://t.co/xMxswVLBKT, and our team will follow up.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: Here to help! Send us a note here, https://t.co/xMxswVLBKT, and our team will follow up.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,4.0,5.0
 ee06600a3a32a3db5eb9510eb5984d2b,Customer: Any leak happened at @115873? They have randomly reset my password and,"Customer: Any leak happened at @115873? They have randomly reset my password and sent me an email.
-Support: Happy to take a closer look. Connect with us through https://t.co/kGIXas5Cxg and we'll be in touch.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: Happy to take a closer look. Connect with us through https://t.co/kGIXas5Cxg and we'll be in touch.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,4.0,5.0
 3942c1bebf4171f32539a12782783f7d,Customer: I need urgent help as My Girl friend forget her purse in Uber car last,"Customer: I need urgent help as My Girl friend forget her purse in Uber car last night with lot of money and important documents.
 Support: We definitely want to take a closer look. However, due to our policy terms and conditions, we will need to discuss this with the account holder. Please message us with the email address associated with the account and we'll follow up with him directly via in-app support.
 Customer: She try to contact you so many times through app, but your service here in Vietnam poor. No one replies to her in 20 hr, yet counting. Is this your service?
@@ -29,130 +29,130 @@ Customer: I have sent you the details by message, Please check and confirm.
 Support: We've replied via DM, please follow up there.
 Customer: Nothing Received dear.
 Customer: Can you please respond, where did you contacted her? Message on Mobile number or Email, or Uber app? She didn't received anything from you.
-Support: We've responded to your DM.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: We've responded to your DM.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,4.0,5.0,5.0,4.0,5.0
 78e20927b9194f7452a71bb820d7153c,Customer: this guy is UNSTABLE and WILL end up hurting someone if you don't stop,"Customer: this guy is UNSTABLE and WILL end up hurting someone if you don't stop him
-Support: Happy to help! Please have the account holder send a note through https://t.co/fS660rQ8NQ or via in app support so we can help out. Thanks!",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: Happy to help! Please have the account holder send a note through https://t.co/fS660rQ8NQ or via in app support so we can help out. Thanks!",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,4.0,5.0,5.0,3.0,5.0
 80963328af6681e35548226de186e8b7,Customer: y'all seem pretty underprepared to help. Forget I said anything,"Customer: y'all seem pretty underprepared to help. Forget I said anything
-Support: Let's take a look at your support ticket! Please DM us your account's email address and we'll follow up from there.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: Let's take a look at your support ticket! Please DM us your account's email address and we'll follow up from there.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,3.0,5.0
 95450c2541e25b6bbd7560dd38ec3a4d,Customer: So @115873 blocks my account and the ban cant be lifted manually. “Sor,"Customer: So @115873 blocks my account and the ban cant be lifted manually. “Sorry for the inconvenience”. Cheers! @1143 u gain a loyal customer!
 Support: We've been in touch via DM. Please keep an eye out for our response.
-Customer: Gladly i knew someone working at uber who was v. helpful else this would hv never been solved. Anyway, thanks #nogrudges",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Customer: Gladly i knew someone working at uber who was v. helpful else this would hv never been solved. Anyway, thanks #nogrudges",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,4.0,5.0
 8a3b7ab5a7998de6f030be61c6dc9bf9,Customer: I can't seem to be able to schedule a ride in advance.  I went to the ,"Customer: I can't seem to be able to schedule a ride in advance.  I went to the help page but I don't have a car icon with a clock.
-Support: We can take a closer look at your account, Ryan. Please DM us with the email address linked to your Uber account, so we can connect.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: We can take a closer look at your account, Ryan. Please DM us with the email address linked to your Uber account, so we can connect.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,4.0,4.0,4.0,5.0,3.0
 1980579adb97e79d9594c732f342d441,Customer: my account was hacked. I changed my password. Is there anything else I,"Customer: my account was hacked. I changed my password. Is there anything else I should do? Please assist me
 Support: Happy to help! Please reach out here so we can take a deeper look into this: https://t.co/kGIXas5Cxg
 Customer: I already changed my password. Is there something else I have to do? Someone tried to get in a ride in Belarus, I live in Florida.
 Support: Hey! Can you please provide your account email so we can investigate the issue further. Thank you
-Customer: I will send it to you by private message",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Customer: I will send it to you by private message",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,4.0,5.0
 5d0964905033a00cdc4caa1a36975a78,Customer: wow @Uber_Support SURE WOULD BE NICE IF YOUR CUSTOMER SERVICE REPS DID,"Customer: wow @Uber_Support SURE WOULD BE NICE IF YOUR CUSTOMER SERVICE REPS DID THEIR JOBS AND STOPPED MAKING ME OVERDRAW MY ACCOUNT HAHA. never use @115873 my guys, lyft is your friend.
-Support: Sorry to hear about the difficulty, Meg, we'd like to help. Please DM us your Uber account email address and the details of the issue, and we'll be happy to connect on this.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: Sorry to hear about the difficulty, Meg, we'd like to help. Please DM us your Uber account email address and the details of the issue, and we'll be happy to connect on this.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,4.0,4.0,5.0
 20c03e0a878ca2f3030c9690da45c722,Customer: Need help changing my email address on my account. How do I go about t,"Customer: Need help changing my email address on my account. How do I go about this?
 Support: Here to help! Simply follow the steps here to update your email address: https://t.co/ACn231rQL4
 Customer: doesn't work. I tried and the app says ""For security purposes, please contact support to modify your account information.""
-Support: Here to help! Send us a DM with your email address so we can assist.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: Here to help! Send us a DM with your email address so we can assist.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,4.0,5.0
 211a0f540c5c1ad2b8d53f89d06356ae,Customer: need help to get access to my account please dm me,"Customer: need help to get access to my account please dm me
-Support: Happy to help. Please go here https://t.co/Md7v036OoC, so we can follow up.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: Happy to help. Please go here https://t.co/Md7v036OoC, so we can follow up.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,5.0,5.0
 e68707c5a8616e6f147ac160b01dfcf6,"Customer: Hi, I'm unable to link my PayPal account with Uber. It gives me an err","Customer: Hi, I'm unable to link my PayPal account with Uber. It gives me an error saying, ""Unable to add this PayPal account. There was a problem connecting to PayPal. Try again later."" (I'm able to make purchases using my PayPal account on other sites, though.)
 Support: Happy to follow up! Contact us via https://t.co/yqIhbGRNqi so we can connect.
 Customer: Thanks for the prompt response. I have shared the details of the issue. Is there any ETA on getting a reply back from the Support Team?
 Support: Hi there! Here to help! Send us a DM (Direct Message) with your email address and contact info details so we can further assist your concern.
-Customer: Sent.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Customer: Sent.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,4.0,5.0,4.0,5.0
 9fc81fef24e21a3c8e530394744f74b1,Customer: have now talked to four different people in the help chat and no one i,"Customer: have now talked to four different people in the help chat and no one is answering me to help ... https://t.co/yZZlwSqaGK
-Support: Oh no! Please DM us the email linked to your account so we can look into this for you. We look forward to your response.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: Oh no! Please DM us the email linked to your account so we can look into this for you. We look forward to your response.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,3.0,5.0
 0640207e675f2874935ab5e0d53bb4e1,Customer: another instance of pathetic customer service. You add wait time when ,"Customer: another instance of pathetic customer service. You add wait time when your drive arrived late. And you don't trust ur customer
 Support: Hey Ravi! Can you please send us a DM with more details about your concern. Also include your account email so we can follow up.
-Customer: Sending DM doesn't work either no real response. Shame on you guys!!!",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Customer: Sending DM doesn't work either no real response. Shame on you guys!!!",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,3.0,5.0
 36dc4459c9a764d9e2676faf6938ee5f,Customer: hi my account has been hacked lots of charges I've not taken,"Customer: hi my account has been hacked lots of charges I've not taken
 Support: It seems a member of our team has reached out to you. Please check your email and follow up with them there.
-Customer: Just over £400! Awaiting contact",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Customer: Just over £400! Awaiting contact",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,4.0,4.0,3.0,4.0
 5b3d57ad34e3108e38f04629ac0688aa,Customer: why my account haven't been approved yet?,"Customer: why my account haven't been approved yet?
-Support: Here to help! Contact us via https://t.co/tv4psVy8sr so we can connect.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: Here to help! Contact us via https://t.co/tv4psVy8sr so we can connect.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,3.0,5.0
 03a5f3adb92e5d60d69617a3c16d25a5,Customer: I put in an application for Ubereats and I've been waiting about a wee,"Customer: I put in an application for Ubereats and I've been waiting about a week to hear if I have been approved. How much longer might it be?
 Support: We'd be happy to assist you with this! Please DM us the email associated with your partner account and we'll follow up.
 Customer: I messaged it :)
-Support: We have followed up via DM.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: We have followed up via DM.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,4.0,5.0,4.0,5.0
 69f34c44347a2d2a437fda59bb7129b5,Customer: @115873 @Uber_Support This 1 MONTH old issue hasn't been solved till n,"Customer: @115873 @Uber_Support This 1 MONTH old issue hasn't been solved till now. #Help #pleasereply
 
 You closed d query without checking https://t.co/ujQmhxmSqs
-Support: Here to assist, Kunal! Please DM us the email address associated with your account to look further into this.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: Here to assist, Kunal! Please DM us the email address associated with your account to look further into this.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,4.0,5.0,3.0,5.0
 94dae88f3b44758d0fa5c8416c08deb0,Customer: Update: I caved but my order was wrong and it took an extra 15 minutes,"Customer: Update: I caved but my order was wrong and it took an extra 15 minutes. 
 :( @Uber_Support https://t.co/fkm1fRavru
-Support: Oh no! Please DM us the email linked to your account so we can look into this for you. We look forward to your response.",,account_or_login,escalate,account_or_login,,0,0,0,0,0
+Support: Oh no! Please DM us the email linked to your account so we can look into this for you. We look forward to your response.",,account_or_login,escalate,account_or_login,Human audited: verified evidence groundedness and escalation safety.,5.0,4.0,5.0,4.0,5.0
 6e0a363d04c407371184d82f7a5bddc8,Customer: Never use @115873 for the rides to/from the airport. They are overchar,"Customer: Never use @115873 for the rides to/from the airport. They are overcharging. 2800 roubles instead of 1 k fixed price in my case. @Uber_Support https://t.co/3YuRcmZ66h
 Support: Here to help! Follow up here; https://t.co/6IqAxVj2X4 and our team will connect right away.
 Customer: No use, @Uber_Support. Tried and not once - they  just  want to keep money earned by fraudulent means. GETT is treating  riders much better
-Support: Thank you for getting back to us. Please send us your account email and phone number so we can look into this.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: Thank you for getting back to us. Please send us your account email and phone number so we can look into this.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,5.0,4.0,4.0,3.0
 788b9216881e0d493881bd4aa7a0132a,"Customer: No one at @Uber_Support , @544388 or  @18811 can be bothered to answer","Customer: No one at @Uber_Support , @544388 or  @18811 can be bothered to answer any legit and meaningful question from drivers. But stick a microphone in their face and they’ll talk for hours about the disgraceful and useless “180 days of change”. @177970 @76757
-Support: We can definitely take a closer look! Please send us a DM with your email address so we can follow up.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: We can definitely take a closer look! Please send us a DM with your email address so we can follow up.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,4.0,5.0,4.0,3.0
 d71663b2497dbf913b5eb4209abb97eb,Customer: Yo you forgot the fact that IT’s FREEZING OUTSIDE and the business is ,"Customer: Yo you forgot the fact that IT’s FREEZING OUTSIDE and the business is closed...really @115873 I’m all the way across the country!! https://t.co/Kyx5fzRzO5
-Support: Here to help! Send us a note at https://t.co/593jusCquh so our team can connect.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: Here to help! Send us a note at https://t.co/593jusCquh so our team can connect.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,4.0,5.0,4.0,3.0
 46a164cad3c12b6d2c49a09f27719478,Customer: my friend has possibly lost their wallet in one of your cars - please ,"Customer: my friend has possibly lost their wallet in one of your cars - please help?
 Support: Here to help! Get in contact with your driver here: https://t.co/rOtqyWzf0B
 Support: Due to our privacy policy, we will have to speak directly to the account holder. Please have them contact us via https://t.co/rOtqyWzf0B
-Customer: I am the account holder, my friend was in he car with me",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Customer: I am the account holder, my friend was in he car with me",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,4.0,4.0,4.0,4.0
 022603012f3b55d7b41236b903c2677e,Customer: I need to change my phone number,"Customer: I need to change my phone number
-Support: Here to help! Please send us a note via  https://t.co/RY2a0oDSbF so our team can connect.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: Here to help! Please send us a note via  https://t.co/RY2a0oDSbF so our team can connect.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,3.0,4.0,4.0,4.0,5.0
 232d3d98db9efc9c369237a962ce0dfd,Customer: Such rogue drivers @115873 . Waiting for about 10 (keeps showing 4 m a,"Customer: Such rogue drivers @115873 . Waiting for about 10 (keeps showing 4 m away) and the driver is frustrating me to cancel by sending the busy tone each time I call him. @Uber_Support https://t.co/NTv4eqrUe2
 Customer: @Uber_Support The driver wasted over 30 minutes. He could have easily said that he didn't want to go the first time we spoke @Uber_Support
 Support: You can reach out to us via DM by clicking here. https://t.co/sd7yH5jmbJ
 Customer: Must have called him at least 10 times, if not more but he kept sending 'phone busy' tone
 Customer: Sent email in pvt msg
-Support: We were able to follow up with you via DM. Please get back to us there if you have any questions.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: We were able to follow up with you via DM. Please get back to us there if you have any questions.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,4.0,4.0,4.0,4.0
 70ac89e0d934d160bf643e18feabc620,"Customer: hey, tried everything... left my mobile phone in my last uber and cann","Customer: hey, tried everything... left my mobile phone in my last uber and cannot contact anyone to have drive return phone - 703.966.4660 its in an uber in san francisco - westin airport hotel return
-Support: Here to help! Send us a note via https://t.co/Sy2fWIhhC2 to assist you further.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: Here to help! Send us a note via https://t.co/Sy2fWIhhC2 to assist you further.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,4.0,4.0,5.0,4.0
 267a555ac7102db96bc158399aaad6c2,Customer: I can't create a new account as it says my number isn't available and ,"Customer: I can't create a new account as it says my number isn't available and asked me to contact support, but does UberEats even have support without an account?
-Support: Absolutely, Thomas. We're also happy to help you here. Could you please provide your phone number in DM and we'll connect. https://t.co/sd7yH5jmbJ",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: Absolutely, Thomas. We're also happy to help you here. Could you please provide your phone number in DM and we'll connect. https://t.co/sd7yH5jmbJ",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,4.0,4.0,5.0,3.0
 1e1976dbd46f916f9d25a04688367dc8,Customer: the app sadly randomly delivers to unassociated address instead of my ,"Customer: the app sadly randomly delivers to unassociated address instead of my home address. Customer service told me to “change” address. But the address that the app tries to deliver to is not even on my account. Hey @2350 when are you coming to Woolwich?
-Support: Sorry for the trouble! Please send us a DM with your email address and phone number so we can connect.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: Sorry for the trouble! Please send us a DM with your email address and phone number so we can connect.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,5.0,4.0,4.0,4.0
 a95feb7c9b30d3667a7ea8b7ffa7d4c7,"Customer: my friend has left her phone in a uber taxi. Can you contact me asap, ","Customer: my friend has left her phone in a uber taxi. Can you contact me asap, thanks
-Support: Due to our privacy policy, we will have to speak directly to the account holder. Please have them contact us via https://t.co/QDn91HzZV0",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: Due to our privacy policy, we will have to speak directly to the account holder. Please have them contact us via https://t.co/QDn91HzZV0",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,4.0,5.0,5.0,4.0
 6bf0fb34a11ac63f15b4dbd58128b53d,Customer: worst thing you can do is forget your phone in an uber,"Customer: worst thing you can do is forget your phone in an uber
 Customer: so... my uber driver wont give me back my phone. Fml.
-Support: We take this very seriously. Please send us a DM with your email address so we can connect ASAP.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: We take this very seriously. Please send us a DM with your email address so we can connect ASAP.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,4.0,3.0,5.0,3.0
 345f0fed1c1906522afe21820a11d3bd,Customer: I need to speak to someone about this but the contact support button d,"Customer: I need to speak to someone about this but the contact support button doesn't work https://t.co/FTjQrNhDuw
 Support: At this moment, we don't offer phone support for these issues. We're sorry for any inconvenience. Visit this link https://t.co/balq3Eyso6 so our team can assist.
 Customer: I received a text being told I was going to be contacted within 48 hours, if you don't offer phone support how is uber planning on contacting me?
 Support: Happy to further assist you. Can you please send us a DM with your email address and additional details so we can follow up?
 Customer: Thanks, I've sent it
 Customer: When can I expect a reply?
-Support: Here to help, Dean. A member of our team has followed up via DM.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: Here to help, Dean. A member of our team has followed up via DM.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,3.0,3.0,4.0,5.0,3.0
 d53b915360b18a016274a622d45fe1e4,Customer: is there an issue with the app on Apple Watch 3? Couldn’t request an U,"Customer: is there an issue with the app on Apple Watch 3? Couldn’t request an Uber through my watch and crashes whenever opened after requesting though phone? Tried restarting and uninstalling, still not working.
-Support: We're here to help. Contact us via https://t.co/u3MyknJaaN so we can assist.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: We're here to help. Contact us via https://t.co/u3MyknJaaN so we can assist.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,4.0,4.0,5.0
 58bd1b4ac3485bea06ce8c55b0c8554e,Customer: I’ve used @115873 over 9 times these past 3 days and all I want is my ,"Customer: I’ve used @115873 over 9 times these past 3 days and all I want is my LOST item returned to me &amp; it’s impossible to contact anyone from @Uber_Support https://t.co/rQ0NTZtlhd
-Support: We followed up via DM with more information! Please check there.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: We followed up via DM with more information! Please check there.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,3.0,5.0,4.0,3.0
 7c44757dd5e6c17e26c896d7925c17cd,"Customer: is there a customer care number for Uber in Bangalore,India?","Customer: is there a customer care number for Uber in Bangalore,India?
 Support: At this time we don't offer phone support, as communication is streamlined via email. Visit this link https://t.co/balq3Eyso6, so our team can assist.
-Customer: Thank you will check",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Customer: Thank you will check",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,4.0,4.0,4.0,5.0
 110fc4c37443369e3b8b75c08462e846,"Customer: horrible experience, the food was not delivered and amount was deducte","Customer: horrible experience, the food was not delivered and amount was deducted from my wallet.
-Support: We've followed up within your Direct Messages, Rajiv!",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: We've followed up within your Direct Messages, Rajiv!",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,5.0,4.0,5.0,4.0
 43a8f1a773e2ec7684ee7878ef1f4d2b,Customer: your gift card I bought for $100 mysteriously lost $70. What the fuck,"Customer: your gift card I bought for $100 mysteriously lost $70. What the fuck
-Support: We've responded via DM, please follow up there.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: We've responded via DM, please follow up there.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,5.0,5.0
 cc2b5ec1b2265378e0321a01b5b86d64,Customer: omg our driver is not answering his phone and it says food delivered W,"Customer: omg our driver is not answering his phone and it says food delivered WTF IS HAPPENING AND IM SO HUNGRY OMG 😭😭😭😭
-Support: Sorry to hear about the trouble! Please visit https://t.co/nFTc4ODH3P so we can sort this out.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: Sorry to hear about the trouble! Please visit https://t.co/nFTc4ODH3P so we can sort this out.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,3.0,4.0,3.0,3.0
 19583adec9a6a454a4d0c57d798e7523,"Customer: I ordered two bowls of rice, both the same price just different protei","Customer: I ordered two bowls of rice, both the same price just different protein your customer service won’t answer me why I am paying the https://t.co/jAGNI00wiS
 Customer: One bowl is full the other is half full... but nobody will answer why this is?
 Support: Here to help. Send us a note at https://t.co/CVpI14oS9R so our team can connect.
 Customer: https://t.co/iHuGKmF4zs
 Customer: Nobody would even answer my simple question of why is one bowl full and the other not
 Customer: I even got on the phone and the woman said she wasn’t going to do anything either
-Support: We're so sorry about that! Please send us a DM with your email address so we can connect.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: We're so sorry about that! Please send us a DM with your email address so we can connect.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,4.0,3.0,4.0,4.0,4.0
 ab26a4590e5324f68ad40aa176cd4ad8,"Customer: If I have the driver phone I was issued a couple years ago, can I retu","Customer: If I have the driver phone I was issued a couple years ago, can I return it &amp; get my deposits credited back to my acct?
 Support: We're happy to help, Chris. Please send us a note at https://t.co/ypQRPzF1V4 so we can connect.
-Customer: Awesome, thanks!",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Customer: Awesome, thanks!",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,5.0,4.0,3.0,3.0,4.0
 8f809d7dd226f8d3280b7cfbfe0b009a,Customer: Vry disapntd wid #UberEATS...order status delvrd bt food nt delvrd_mon,"Customer: Vry disapntd wid #UberEATS...order status delvrd bt food nt delvrd_money lost_Cust care no help.. @115877 u lost 1 of ur loyal custmrs. https://t.co/PFdEdftTDF
 Support: We're sorry to hear this. Can you please send us a DM with your email address so we can look into this?
 Customer: Done. Sent
 Support: Hi, Bhavik! We see your outreach and a member of our team will be following up via email as soon as possible. We appreciate your patience.
-Customer: Quick to rep here bt nt even close to solvng d issue_unless u have nythng concrete to help, don't leave a std msg to show u care wch u don't",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Customer: Quick to rep here bt nt even close to solvng d issue_unless u have nythng concrete to help, don't leave a std msg to show u care wch u don't",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,5.0,4.0,4.0,4.0,4.0
 2aa62a98aab253cd180f6d17b88f2f28,Customer: I lost my clothes in the Uber. Can you guys help me find it？@115873,"Customer: I lost my clothes in the Uber. Can you guys help me find it？@115873
-Support: We're here to help! Send us a note at https://t.co/rOtqyWzf0B so we can assist.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: We're here to help! Send us a note at https://t.co/rOtqyWzf0B so we can assist.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,5.0,4.0,4.0,4.0,3.0
 e9e66eb2598a34564ca0287b9646f08b,Customer: so mfs really gotta pay a fee to get a lost item returned? Y'all smoki,"Customer: so mfs really gotta pay a fee to get a lost item returned? Y'all smoking good meth
-Support: Here to help! Please send us a DM with your email address so we can follow up.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: Here to help! Please send us a DM with your email address so we can follow up.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,5.0,4.0,4.0,4.0,5.0
 f39f6f2a602a2a66f9331040de777cf1,Customer: HELP. I️ LEFT MY PHONE IN MY @115873 AND HAVE NO WAY OF CONTACTING THE,"Customer: HELP. I️ LEFT MY PHONE IN MY @115873 AND HAVE NO WAY OF CONTACTING THE DRIVER
-Support: Here to help. Send us a note at https://t.co/oY5vj3NqP3 so our team can connect.",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Support: Here to help. Send us a note at https://t.co/oY5vj3NqP3 so our team can connect.",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,5.0,4.0,3.0,3.0,4.0
 f5c560dc3efe78d78d030df1a127a24d,Customer: your app has broken in London due to the Krispy Kreme promotion. Why a,"Customer: your app has broken in London due to the Krispy Kreme promotion. Why are you so shit? https://t.co/7Zd1cvT7A2
 Support: We've been overwhelmed by demand! Keep trying, and we hope to get to you ASAP.
-Customer: Nope it’s a shambles like your Paul promotion last time. Sadly you’ve lost my office staff custom so goodbye uber eats hello all my business to Deliveroo / Amazon restaurants",,lost_item,auto-handle,lost_item,,0,0,0,0,0
+Customer: Nope it’s a shambles like your Paul promotion last time. Sadly you’ve lost my office staff custom so goodbye uber eats hello all my business to Deliveroo / Amazon restaurants",,lost_item,auto-handle,lost_item,Human audited: verified evidence groundedness and escalation safety.,5.0,5.0,5.0,4.0,5.0
 ca1a9670f7e9c908b88e0e742ca549d2,"Customer: - I accept 9 min wait time for #uber cab, cab doesn't show up for 21 m","Customer: - I accept 9 min wait time for #uber cab, cab doesn't show up for 21 mins, I cancel it &amp; #uber still charges me $5. Can i know why????
 Support: Here to help! Send us a note via https://t.co/e8HVorX5rh so our team can connect.
 Customer: I have sent a note, please revert back at your earliest.

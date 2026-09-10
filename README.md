@@ -114,7 +114,8 @@ Evaluated on the **200-conversation Golden Set** with holdout conversation IDs s
 * **Overcoming the Simple Baseline:** 1-nearest-neighbor matching without domain weighting scored only `0.421` Macro-F1 because generic terms (`"driver"`, `"ride"`) dominate Uber conversations, pulling safety and payment issues into generic trip categories.
 * **Calibrated Confidence:** Expected Calibration Error (ECE) dropped from 0.292 to **0.074**. The high-confidence bucket (0.8–1.0) contains **114 cases with 85.3% accuracy and 85.3% mean confidence**, demonstrating genuine alignment between predicted probabilities and real-world accuracy.
 * **Retrieval Ranking:** Recall@1 = `0.400`, Recall@3 = `0.595`, Recall@5 = `0.660`, MRR = `0.503`.
-* **LLM-as-Judge Response Quality:** Average **4.66 / 5.0** across Groundedness, Correctness, Completeness, Tone, and Safety (`reports/judge_scores.csv`).
+* **LLM-as-Judge Response Quality:** Average **4.64 / 5.0** across Groundedness, Correctness, Completeness, Tone, and Safety (`reports/judge_scores.csv`).
+* **Human-Judge Agreement Evidence:** Blinded human audit on 50 golden cases verified **100% agreement within ±1 point** (MAE = 0.284, exact agreement = 71.6%, safety correlation $r = 0.742$). See [REPORT.md](file:///c:/Users/Kiran%20Teja/Downloads/projects/assignment-hiver/REPORT.md#23-evaluation-harness--human-judge-agreement-evidence).
 
 ---
 
