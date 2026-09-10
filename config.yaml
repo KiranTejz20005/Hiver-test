@@ -1,0 +1,10 @@
+brand: Uber_Support
+data_path: data/raw/twcs_conversations.parquet
+golden_path: data/golden/uber_golden_set.csv
+sample_size: 200
+random_seed: 42
+retrieval_top_k: 3
+low_confidence_threshold: 0.60
+weak_retrieval_threshold: 0.15
+provider_timeout_seconds: 90
+provider_retries: 2
