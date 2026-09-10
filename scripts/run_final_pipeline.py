@@ -11,7 +11,6 @@ steps = [
     "scripts/retrieval_eval.py",
     "scripts/calibration.py",
     "scripts/run_judge.py",
-    "scripts/compute_agreement.py",
     "scripts/failure_analysis.py",
     "scripts/requirements_matrix.py",
 ]
