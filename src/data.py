@@ -27,11 +27,26 @@ def _clean_title(conversation: str) -> str:
 
 
 def load_cases() -> pd.DataFrame:
-    candidates = [Path("data/raw/twcs_conversations.parquet"), Path("data/raw/twcs.csv"), Path("data/raw/twcs_train.csv")]
+    root = Path(__file__).resolve().parent.parent
+    processed_paths = [root / "data" / "uber_cases.parquet", Path("data/uber_cases.parquet")]
+    for p in processed_paths:
+        if p.exists():
+            frame = pd.read_parquet(p)
+            required_cols = ["conversation_id", "title", "customer", "resolution", "intent"]
+            if all(c in frame.columns for c in required_cols):
+                return frame[required_cols].dropna().reset_index(drop=True)
+
+    candidates = [
+        root / "data" / "raw" / "twcs_conversations.parquet",
+        Path("data/raw/twcs_conversations.parquet"),
+        Path("data/raw/twcs.csv"),
+        Path("data/raw/twcs_train.csv"),
+    ]
     for path in candidates:
         if path.suffix == ".parquet" and path.exists():
             frame = pd.read_parquet(path)
-            frame = frame[frame["company"].eq("Uber_Support")].copy()
+            if "company" in frame.columns:
+                frame = frame[frame["company"].eq("Uber_Support")].copy()
             frame["title"] = frame["conversation"].map(_clean_title)
             frame["customer"] = frame["conversation"].astype(str)
             frame["resolution"] = frame["summary"].fillna("Historical Uber support conversation")
