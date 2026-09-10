@@ -1,0 +1,9 @@
+dimension,value,count
+intent,account_or_login,25
+intent,lost_item,25
+intent,other_or_unclear,25
+intent,payment_problem,25
+intent,promo_or_coupon,25
+intent,refund_request,25
+intent,safety_or_driver_conduct,25
+intent,trip_or_pickup,25

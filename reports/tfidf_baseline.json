@@ -1,0 +1,69 @@
+{
+  "accuracy": 0.74,
+  "macro_f1": 0.7317133630426496,
+  "weighted_f1": 0.7317133630426497,
+  "report": {
+    "account_or_login": {
+      "precision": 0.75,
+      "recall": 0.84,
+      "f1-score": 0.7924528301886793,
+      "support": 25.0
+    },
+    "lost_item": {
+      "precision": 0.95,
+      "recall": 0.76,
+      "f1-score": 0.8444444444444444,
+      "support": 25.0
+    },
+    "other_or_unclear": {
+      "precision": 0.5,
+      "recall": 0.92,
+      "f1-score": 0.647887323943662,
+      "support": 25.0
+    },
+    "payment_problem": {
+      "precision": 0.71875,
+      "recall": 0.92,
+      "f1-score": 0.8070175438596491,
+      "support": 25.0
+    },
+    "promo_or_coupon": {
+      "precision": 0.9411764705882353,
+      "recall": 0.64,
+      "f1-score": 0.7619047619047619,
+      "support": 25.0
+    },
+    "refund_request": {
+      "precision": 0.782608695652174,
+      "recall": 0.72,
+      "f1-score": 0.75,
+      "support": 25.0
+    },
+    "safety_or_driver_conduct": {
+      "precision": 0.9565217391304348,
+      "recall": 0.88,
+      "f1-score": 0.9166666666666666,
+      "support": 25.0
+    },
+    "trip_or_pickup": {
+      "precision": 0.5454545454545454,
+      "recall": 0.24,
+      "f1-score": 0.3333333333333333,
+      "support": 25.0
+    },
+    "accuracy": 0.74,
+    "macro avg": {
+      "precision": 0.7680639313531737,
+      "recall": 0.74,
+      "f1-score": 0.7317133630426496,
+      "support": 200.0
+    },
+    "weighted avg": {
+      "precision": 0.7680639313531736,
+      "recall": 0.74,
+      "f1-score": 0.7317133630426497,
+      "support": 200.0
+    }
+  },
+  "n": 200
+}

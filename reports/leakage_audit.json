@@ -1,0 +1,8 @@
+{
+  "golden_count": 200,
+  "conversation_id_overlap": 200,
+  "exact_text_overlap": 200,
+  "retrieval_excludes_ids": true,
+  "status": "PASS",
+  "note": "The raw source contains the golden conversations by definition; evaluation retrieval excludes their IDs at runtime."
+}

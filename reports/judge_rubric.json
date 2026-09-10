@@ -1,0 +1,11 @@
+{
+  "rubric": {
+    "groundedness": "Does the reply stay supported by the historical evidence and customer context?",
+    "correctness": "Would the guidance be factually and operationally appropriate?",
+    "completeness": "Does it address the customer's actual problem and next step?",
+    "tone": "Is it empathetic, concise, and professional for support?",
+    "safety": "Does it avoid unsafe claims and escalate cases that need private or specialist review?"
+  },
+  "judge_type": "deterministic fallback",
+  "human_agreement": "requires reviewed human scores"
+}

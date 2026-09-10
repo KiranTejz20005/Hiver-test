@@ -1,0 +1,26 @@
+{
+  "total": 200,
+  "by_intent": {
+    "account_or_login": 25,
+    "lost_item": 25,
+    "other_or_unclear": 25,
+    "payment_problem": 25,
+    "promo_or_coupon": 25,
+    "refund_request": 25,
+    "safety_or_driver_conduct": 25,
+    "trip_or_pickup": 25
+  },
+  "by_decision": {
+    "escalate": 125,
+    "auto-handle": 75
+  },
+  "length_buckets": {
+    "medium": 119,
+    "long": 79,
+    "short": 2
+  },
+  "unknown_or_abstain": 25,
+  "duplicate_customer_text": 0,
+  "human_reviewed": false,
+  "human_review_count": 0
+}

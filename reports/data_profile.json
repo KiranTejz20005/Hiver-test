@@ -1,0 +1,14 @@
+{
+  "rows": 41185,
+  "intents": {
+    "other_or_unclear": 15570,
+    "payment_problem": 5094,
+    "trip_or_pickup": 5071,
+    "lost_item": 4871,
+    "account_or_login": 4171,
+    "refund_request": 3987,
+    "promo_or_coupon": 1264,
+    "safety_or_driver_conduct": 1157
+  },
+  "source": "TNE-AI mirror of thoughtvector/customer-support-on-twitter"
+}
